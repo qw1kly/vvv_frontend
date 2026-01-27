@@ -370,7 +370,7 @@ position: absolute;
 width: 353px;
 height: 216px;
 left: 3px;
-top: 585px;
+top: 605px;
 
 background: #0E0E10;
 box-shadow: 0px -758px 131.1px -50px #78EA7D;
@@ -402,6 +402,7 @@ color: #78EA7D;
   position: absolute;
   width:358px;
   left: calc(50% - 358px / 2);
+  top: 20px;
 }
 
 #summofball{
