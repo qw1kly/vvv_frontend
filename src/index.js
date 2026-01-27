@@ -24,7 +24,7 @@ setTimeout(() => {
 	}, 100)
 
 let hash_data = document.getElementById("hashid").innerText;
-axios.get('http://127.0.0.1:8000/auth', {headers: {
+axios.get('https://qw1kly-vvv-backend-9867.twc1.net/auth', {headers: {
     'x-telegram-init-data': hash_data
   } })
   .then(response => {
@@ -83,7 +83,7 @@ link.style.setProperty('--text-width', `${textWidth}px`); // передаём в
 const keyCreation = document.getElementById("createkey");
 keyCreation.addEventListener("click", async function crkey (e) {
   if (Number(document.getElementById("summofball").innerText.slice(0, -1) >= 250)) {
-    const response = await fetch('http://127.0.0.1:8000/create-key', {
+    const response = await fetch('https://qw1kly-vvv-backend-9867.twc1.net/create-key', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -176,7 +176,7 @@ const copy = document.getElementById("keyslist");
             break;
           }
         }
-        const response = await fetch('http://127.0.0.1:8000/remove-key', {
+        const response = await fetch('https://qw1kly-vvv-backend-9867.twc1.net/remove-key', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
